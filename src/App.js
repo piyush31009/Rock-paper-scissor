@@ -89,16 +89,16 @@ class App extends Component {
             &nbsp;
             <input
               type="text"
-              placeholder="Enter your name, at least 5 characters long..."
+              placeholder="Enter your name, at least 4 characters long..."
               value={Name}
               onChange={(e) => {
                 this.setState({ Name: e.target.value });
               }}
             />
-            {Name.trim().length >= 5 && (
+            {Name.trim().length >= 4 && (
               <img
                 className="start"
-                src="https://th.bing.com/th/id/R.2ae465d1837d010046e3de3bd6f53aa6?rik=EKJBjmnGS3rnnQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-z0j1yLnIkNI%2fVA_mVyyvvpI%2fAAAAAAAAAAw%2fCC0w8pUxjl0%2fs1600%2fbutton.png&ehk=EIRoAfpd8VXJjXBcSzViGDiDMzyp1opQ9w2t%2fzT7edI%3d&risl=&pid=ImgRaw&r=0"
+                src="https://media.istockphoto.com/vectors/lets-start-vector-id518307733"
                 alt="Start"
                 onClick={() => {
                   this.setState({
